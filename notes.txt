@@ -81,3 +81,55 @@ How to create a promise:
  }
 
  getData()
+
+ ========================================================================================================
+
+What NodeJS is?
+
+> Node is a back-end JS runtime environment
+> Runs on Chrome V8 Engine 
+> Executes JS outside the browser 
+
+Browser vs NodeJS
+
+DOM         -   No Dom 
+Window      -   No window 
+Interactive apps  - Server side apps 
+No file system  - File System 
+
+
+Current Version of NodeJS: 18.14.2 LTS -> Long Time Support 
+
+anilvarma@Anils-MacBook-Air ~ % node -v
+v16.14.2
+
+
+There are 2 method to run or execute a JS file on Node envi: 
+
+1) REPL -> Read Eval Print Loop
+2) CLI (VS CODE) -> Command Line Interface (Code Editors)
+
+
+==========================================================================
+
+
+GLOBAL VARIABLES: 
+
+GV in NodeJS are the variables that can be declared with a value and which can be accessed anywhere througout the program.
+The scope of the GV is not limited to any function or a file.
+
+__dirname -> To obtain the current path to the direactory
+__filename => to obtain the name of the file
+require -> used to import a file
+module -> gives info about the current module 
+process -> gives infor about the env where the program is exe
+
+==============FIND OUT OTHER GVs======================
+
+MODULES:
+
+Modules -> Encapsulated Code (it is just a file)
+
+    1) Manually created 
+    2) In-built 
+    3) Externall Packages 
