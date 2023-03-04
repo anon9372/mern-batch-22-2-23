@@ -131,5 +131,18 @@ MODULES:
 Modules -> Encapsulated Code (it is just a file)
 
     1) Manually created 
-    2) In-built 
+    2) In-built -> os, path, fs, http
+
+        a) os: 
+
+        b) path module: 
+            - create a path
+            - access the file or the file name
+            - we can find the absolute path
+
+        c) fs (file system)
+
+        d) http module
+
+
     3) Externall Packages 

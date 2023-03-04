@@ -1,0 +1,5 @@
+1) Create a module called 'City' with names of few cities and another module with a function that accepts the city name and gives output as 'My City is {cityName}' and  import both in another module.
+
+2) use fs method to create a folder called 'my-folder' and create a file in it with a text message 'This file is created using fs method' and also read a file using fs method
+
+3) Create a http server with routes such as '/', '/home' and '/about' on port number 3800. Each route should dispaly some content on the browser.
