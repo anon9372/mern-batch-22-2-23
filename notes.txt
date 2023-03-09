@@ -146,3 +146,19 @@ Modules -> Encapsulated Code (it is just a file)
 
 
     3) Externall Packages 
+
+
+======================================================================================================================
+
+NPM PACKAGES
+
+installing to devDep: npm i <packageName> --save-dev     
+installing to dev: npm i <packageName>
+installing globally: npm i <packageName> -g
+
+
+======================================================================================================================
+
+Event Loop:
+
+The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
