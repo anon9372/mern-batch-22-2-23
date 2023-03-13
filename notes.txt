@@ -160,5 +160,25 @@ installing globally: npm i <packageName> -g
 ======================================================================================================================
 
 Event Loop:
-
 The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
+
+
+
+Event emitter and Streams:
+
+In Node.js, an event emitter is a core module that allows developers to create and handle custom events. It is a fundamental building block for developing event-driven applications in Node.js.
+
+The event emitter module provides a class called EventEmitter that can be extended to create custom event emitters. The EventEmitter class provides several methods, including on(), emit(), and once(), that allow you to register listeners for events and trigger events
+
+Event emitters are used extensively in Node.js applications, including web servers, database connections, and other types of I/O operations. They allow developers to write asynchronous, non-blocking code that can handle multiple events at the same time.
+
+
+once some async func is triggered event is emitted.
+
+
+
+STREAMS: 
+A node stream is a method of transferring large amounts of data on mobile devices or websites by breaking the file or data down into manageable chunks.
+
+default size is : 64kb 
+highWaterMark method is used to control the size of the file
