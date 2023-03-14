@@ -182,3 +182,28 @@ A node stream is a method of transferring large amounts of data on mobile device
 
 default size is : 64kb 
 highWaterMark method is used to control the size of the file
+
+============================EXPRESS JS===================================
+
+>> Minimal
+>> Flexible
+>> Robust 
+ 
+ NodeJS web application framwork, used to build RESTful APIs. (Represntatinal State Transfer)
+
+ // CRUD Operations
+// Create, Read, Update and Delete
+
+// app.get -> Read
+// app.post -> Create
+// app.put -> Update
+// app.delete -> Delete
+
+// app.all -> Every other route
+// app.use -> used to import or work with middleware
+// app.listen -> To listen to the port
+
+
+SSR - Template, res.render()
+
+API - json, data, res.json()
