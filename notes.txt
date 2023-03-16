@@ -207,3 +207,7 @@ highWaterMark method is used to control the size of the file
 SSR - Template, res.render()
 
 API - json, data, res.json()
+
+=============== PARAMS and QUERY ===========================
+
+Params: Parameters that are requested by the client through the api
