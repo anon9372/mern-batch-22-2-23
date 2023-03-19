@@ -211,3 +211,9 @@ API - json, data, res.json()
 =============== PARAMS and QUERY ===========================
 
 Params: Parameters that are requested by the client through the api
+
+
+
+ARRAY METHODS:
+
+slice, splice, filter, index, find, startsWith, push, pop, shift, unShift, indexOf, includes, reduce, map, forEach
