@@ -1,0 +1,24 @@
+NODE JS ASSIGNMENT
+
+
+What is NodeJS and how does it differ from a conventional browser environment?
+What are the commands to install a npm package Globally and to install a package for the development environment?
+What is an Event Loop?
+What are global variables and modules in NodeJS?
+What are the different types of modules and explain in one line what manually created modules are with an example in VS Code.
+What ‘In-built’ module is used to get the information about the user and user PC info?
+What is ‘fs’? 
+What is the difference between readFileSync, writeFileSync and readFile, writeFile?
+Write code to make use of ‘fs’ to create a file and read a file in the directory?
+What is HTTP Module?
+Create a Server using HTTP Module and console log the message: “Welcome to Achievers IT”.
+What is the command to create a package.json file?
+What is the difference between package.json and package-lock.json file?
+What are callback functions? Explain with examples.
+What are event emitters? Explain with examples.
+What are Streams? How are streams helpful in accessing bigger files? Explain with an example?
+What are ExpressJS and advantages over NodeJSr?
+Create an ExpressJS server, with at least 3 routes and status responses, along with query and params from a dummy json data?
+What is the difference between API and SSR?
+What is the name of the tool used to check APIs?
+

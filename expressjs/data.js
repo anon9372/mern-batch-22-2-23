@@ -17,11 +17,11 @@ const products = [
             },
             {
                 id: 3,
-                review: 'This is a  great product'
+                review: 'This is a  ok ok'
             },
             {
                 id: 4,
-                review: 'This is a great product'
+                review: 'Dosent work for me'
             }
         ]
     },
@@ -43,11 +43,11 @@ const products = [
             },
             {
                 id: 3,
-                review: 'This is a  great product'
+                review: 'This is a  ok ok'
             },
             {
                 id: 4,
-                review: 'This is a great product'
+                review: 'Dosent work for me'
             }
         ]
     },
@@ -69,11 +69,11 @@ const products = [
             },
             {
                 id: 3,
-                review: 'This is a  great product'
+                review: 'This is a  ok ok'
             },
             {
                 id: 4,
-                review: 'This is a great product'
+                review: 'Dosent work for me'
             }
         ]
     },
@@ -95,11 +95,11 @@ const products = [
             },
             {
                 id: 3,
-                review: 'This is a  great product'
+                review: 'This is a  ok ok'
             },
             {
                 id: 4,
-                review: 'This is a great product'
+                review: 'Dosent work for me'
             }
         ]
     }
