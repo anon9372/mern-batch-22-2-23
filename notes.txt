@@ -217,3 +217,13 @@ Params: Parameters that are requested by the client through the api
 ARRAY METHODS:
 
 slice, splice, filter, index, find, startsWith, push, pop, shift, unShift, indexOf, includes, reduce, map, forEach
+
+================== MIDDLEWARE ========================
+
+>> Basically functions
+>> These functions are executed during the 'req' of the server 
+>> Each of the MW has its own req and res
+>> req > MW > res
+
+
+>> APP.USE is used if we want to use the middleware for all the routes in the file, however if we want to use the middleware specifically in a particular route then we dont need to use APP.USE
