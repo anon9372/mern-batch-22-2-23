@@ -2,23 +2,160 @@ NODE JS ASSIGNMENT
 
 
 What is NodeJS and how does it differ from a conventional browser environment?
-What are the commands to install a npm package Globally and to install a package for the development environment?
-What is an Event Loop?
-What are global variables and modules in NodeJS?
-What are the different types of modules and explain in one line what manually created modules are with an example in VS Code.
-What ‘In-built’ module is used to get the information about the user and user PC info?
-What is ‘fs’? 
-What is the difference between readFileSync, writeFileSync and readFile, writeFile?
-Write code to make use of ‘fs’ to create a file and read a file in the directory?
-What is HTTP Module?
-Create a Server using HTTP Module and console log the message: “Welcome to Achievers IT”.
-What is the command to create a package.json file?
-What is the difference between package.json and package-lock.json file?
-What are callback functions? Explain with examples.
-What are event emitters? Explain with examples.
-What are Streams? How are streams helpful in accessing bigger files? Explain with an example?
-What are ExpressJS and advantages over NodeJSr?
-Create an ExpressJS server, with at least 3 routes and status responses, along with query and params from a dummy json data?
-What is the difference between API and SSR?
-What is the name of the tool used to check APIs?
+Ans: 
+NodeJS is an open-source, server-side, JavaScript runtime environment built on Chrome's V8 JavaScript engine. It allows developers to use JavaScript on the server-side to build scalable network applications.
 
+NodeJS differs from a conventional browser environment in several ways:
+
+Execution environment: NodeJS runs on the server-side, while the conventional browser environment runs on the client-side. NodeJS can be used to build server-side applications such as web servers, APIs, and real-time applications, while the browser environment is limited to running scripts on web pages.
+
+Access to resources: NodeJS has access to system resources such as file systems, network sockets, and child processes, while the browser environment has limited access to the client's resources such as cookies, storage, and hardware.
+
+APIs: NodeJS provides APIs for network programming, file system I/O, and other system-level tasks that are not available in the browser environment.
+
+Event-driven architecture: NodeJS uses an event-driven, non-blocking I/O model, which allows it to handle large numbers of concurrent connections with high throughput, while the browser environment is typically single-threaded and blocking.
+
+Overall, NodeJS is designed to be a powerful and efficient server-side platform that allows developers to build scalable and high-performance applications, while the conventional browser environment is primarily designed for building interactive web pages.
+
+
+
+What are the commands to install a npm package Globally and to install a package for the development environment?
+Ans: Global: npm i <packageName> -g
+     dev: npm i <packageName> --save -dev
+
+
+What is an Event Loop?
+Ans: The event loop is what allows Node.js to perform non-blocking I/O operations — despite the fact that JavaScript is single-threaded — by offloading operations to the system kernel whenever possible.
+
+
+
+What are global variables and modules in NodeJS?
+Ans: 
+GV in NodeJS are the variables that can be declared with a value and which can be accessed anywhere througout the program.
+The scope of the GV is not limited to any function or a file.
+
+Modules -> Encapsulated Code (it is just a file)
+
+
+What are the different types of modules and explain in one line what manually created modules are with an example in VS Code.
+Ans: 
+ 1) Manually created 
+    2) In-built -> os, path, fs, http
+        a) os: 
+        b) path module: 
+            - create a path
+            - access the file or the file name
+            - we can find the absolute path
+        c) fs (file system)
+        d) http module
+    3) Externall Packages 
+For example refer to file number 03-modules.js in Nodejs folder
+
+
+
+What ‘In-built’ module is used to get the information about the user and user PC info?
+Ans: OS module
+
+
+What is ‘fs’? 
+Ans: fs stands for file system, it is inbuilt module to read and write files.
+
+
+What is the difference between readFileSync, writeFileSync and readFile, writeFile?
+Ans: 
+
+readFileSync and  writeFileSync -> reads and writes files from or to a folder in a sync way.
+Ex: refer 09-fs-sync.js in Nodejs folder
+
+readFile and writeFile -> reads and writes files from ot to a folder in a async way.
+Ex: refer 10-fs-sync.js in Nodejs folder
+
+
+Write code to make use of ‘fs’ to create a file and read a file in the directory?
+Ans: refer 10-fs-sync.js in Nodejs folder and refer 09-fs-sync.js in Nodejs folder
+
+
+What is HTTP Module?
+Ans: 
+The HTTP module is a core module in Node.js that provides functionality for creating HTTP servers and clients. It enables Node.js applications to act as web servers and handle HTTP requests and responses.
+
+With the HTTP module, you can create an HTTP server by using the http.createServer() method. This method creates a new instance of an HTTP server object that listens for requests on a specified port and IP address. You can then define a callback function that will be executed when a request is received by the server.
+
+Here's an example of creating an HTTP server using the HTTP module in Node.js:
+
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/json'});
+  res.end('Hello World\n');
+});
+
+server.listen(3000, 'localhost', () => {
+  console.log('Server running at http://localhost:3000/');
+});
+
+In this example, we create an HTTP server that listens on port 3000 and the IP address of the server is 'localhost'. When the server receives an HTTP request, it will respond with a '200 OK' status code and a plain text response of 'Hello World'. The server.listen() method starts the server and logs a message to the console.
+
+The HTTP module also provides functionality for making HTTP requests from a Node.js application by using the http.request() method. This method creates a new client request object and sends an HTTP request to a specified server.
+
+Overall, the HTTP module in Node.js is a powerful tool for creating and managing HTTP servers and clients. It provides a simple and efficient API for handling HTTP requests and responses.
+
+
+
+Create a Server using HTTP Module and console log the message: “Welcome to Achievers IT”.
+
+
+
+What is the command to create a package.json file?
+Ans: 
+    npm init -> after this command some questions will be asked in the terminal just hit enter to create package.json file.
+
+
+What is the difference between package.json and package-lock.json file?
+Ans:
+    package.json holds the dependencies of the packages that are install in the application, 
+    package-lock.json files holds the dependencies of the dependencies that are installed in package.json file.
+
+
+
+What are callback functions? Explain with examples.
+Ans: 
+
+
+
+
+
+What are event emitters? Explain with examples.
+Ans: 
+In Node.js, an event emitter is a core module that allows developers to create and handle custom events. It is a fundamental building block for developing event-driven applications in Node.js.
+
+The event emitter module provides a class called EventEmitter that can be extended to create custom event emitters. The EventEmitter class provides several methods, including on(), emit(), and once(), that allow you to register listeners for events and trigger events
+
+Event emitters are used extensively in Node.js applications, including web servers, database connections, and other types of I/O operations. They allow developers to write asynchronous, non-blocking code that can handle multiple events at the same time.
+
+once some async func is triggered event is emitted.
+
+
+What are Streams? How are streams helpful in accessing bigger files? Explain with an example?
+Ans: 
+A node stream is a method of transferring large amounts of data on mobile devices or websites by breaking the file or data down into manageable chunks.
+default size is : 64kb 
+highWaterMark method is used to control the size of the file
+
+What are ExpressJS and advantages over NodeJSr?
+Ans: https://www.javatpoint.com/expressjs-interview-questions
+
+
+Create an ExpressJS server, with at least 3 routes and status responses, along with query and params from a dummy json data?
+
+
+
+
+What is the difference between API and SSR?
+Ans: 
+
+
+
+What is the name of the tool used to check and test APIs?
+Ans: Postman
